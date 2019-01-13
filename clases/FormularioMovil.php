@@ -58,6 +58,7 @@ class FormularioMovil {
 		/*$sql.= " WHERE anio=".$anio." AND MONTH(fecha)=".$fecha." AND estatus=1";*/
 		$sql.= " WHERE anio=".$anio." AND fecha='".$fecha."' AND estatus=1";
 		$sql.= " AND hora<=(SELECT time_format(now(), '%H:%i:%s'))";
+		//$sql.= " AND hora<=(SELECT time_format(DATE_SUB(now(), INTERVAL 6 HOUR), '%H:%i:%s'))"; // cuando difs horaria en serv web
 		$sql.= " ORDER BY nombre";
 		$r = mysqli_query($conn, $sql);
 		$arreglo = array();
