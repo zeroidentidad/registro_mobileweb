@@ -21,7 +21,7 @@ class EventosReportes {
 
 	public function numeroRegistros($conn){
 		$num = 0;
-		$sql = "SELECT COUNT(*) AS num FROM eventos";
+		$sql = "SELECT COUNT(*) AS num FROM eventos WHERE anio=".date("Y");
 		$r = mysqli_query($conn, $sql);
 
 		if ($r) {
