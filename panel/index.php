@@ -42,7 +42,7 @@ if (isset($_POST["usuario"])){
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-sm bg-dark navbar-dark" img=>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 		<a href="menu.php" class="navbar-brand">
 			<img src="./imgs/home.png" width="40" height="40" alt="">
 		</a>
